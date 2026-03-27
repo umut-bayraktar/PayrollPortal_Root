@@ -11,6 +11,10 @@ PayrollAI/
 * NewProject/
 * OldProject/
 
+The root repository is reserved for project-level documentation and rules.
+
+Nested project repositories inside NewProject/ must remain independent and must not be tracked by the root repository.
+
 OldProject contains legacy systems which must be analyzed but **not copied**.
 
 NewProject will contain the new architecture and implementation.
@@ -340,6 +344,16 @@ Before starting a new development task, all completed changes in the relevant re
 * pushed to GitHub
 
 If backend and frontend are separate repositories, each repository must be handled independently.
+
+If the task updates root-level documentation or rules, those root repository changes must also be committed and pushed before the next task starts.
+
+The root repository should contain only root-level documents such as guides, architecture notes and project rules.
+
+The root repository must not track:
+
+* NewProject/
+* OldProject/
+* local tooling folders such as .dotnet-cli/
 
 No new implementation work should begin while completed local changes are waiting to be committed and pushed.
 

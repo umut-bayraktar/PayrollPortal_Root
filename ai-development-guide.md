@@ -48,6 +48,12 @@ Required action before new work begins:
 
 If backend and frontend use separate repositories, this rule applies to each repository separately.
 
+If the task changes root-level documentation such as project rules, guides or architecture notes, the root repository must be committed and pushed as well.
+
+The root repository is only for root-level documentation.
+
+The AI must not add nested repositories like NewProject/ or OldProject/ into the root repository tracking.
+
 The AI should avoid starting a fresh implementation on top of completed but unpushed work unless the user explicitly asks otherwise.
 
 ---
