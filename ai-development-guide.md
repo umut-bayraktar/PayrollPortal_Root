@@ -292,6 +292,15 @@ When AI changes frontend code it must:
 * keep buttons, links and interactive controls touch friendly
 * treat responsive validation as part of done criteria, not an optional polish step
 
+Localization support is also mandatory for all user-visible text.
+
+When AI changes frontend code it must:
+
+* route all user-facing copy through the localization system
+* never leave hardcoded UI text inside components, pages, modals, menus, or validation flows
+* update Turkish and English locale resources in the same task
+* treat missing translation coverage as an incomplete implementation
+
 ---
 
 # AI Output Format

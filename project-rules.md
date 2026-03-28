@@ -208,6 +208,17 @@ Every new or updated frontend surface must:
 
 No frontend task is considered complete unless responsive behavior has been checked.
 
+User-facing text must always support localization.
+
+Every label, button, helper text, validation message, empty state, card title, menu item, modal copy, tooltip, and status text shown to users must:
+
+* come from the localization layer
+* have Turkish and English coverage at minimum
+* avoid hardcoded strings inside components
+* be added to locale resources as part of the same change
+
+No user-visible text is allowed to ship without language support.
+
 Technology stack:
 
 React
